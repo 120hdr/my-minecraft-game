@@ -1,0 +1,49 @@
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 0;
+padding: 0;
+background-color: #87CEEB; /* Light blue background */
+}
+
+h1 {
+margin: 20px 0;
+}
+
+#game-container {
+display: grid;
+grid-template-columns: repeat(10, 30px); /* 10 columns */
+grid-template-rows: repeat(10, 30px); /* 10 rows */
+gap: 1px;
+justify-content: center;
+margin: 20px auto;
+background-color: #3A3A3A; /* Dark gray grid background */
+border: 1px solid #000;
+}
+
+.block {
+width: 30px;
+height: 30px;
+background-color: #8B4513; /* Brown color for blocks */
+border: 1px solid #000;
+}
+
+.block:hover {
+cursor: pointer;
+background-color: #CD5C5C; /* Change color on hover */
+}
+
+button {
+margin-top: 20px;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 5px;
+}
+
+button:hover {
+background-color: #45a049;
+}
