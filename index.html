@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Basic Block Game</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Block Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Basic Block Game</h1>
-<div id="game-container"></div>
-<button id="reset-button">Reset Game</button>
-<script src="scripts.js"></script>
+    <div id="start-screen">
+        <h1>Welcome to the Enhanced Block Game!</h1>
+        <p>Click on the blocks to change their color and score points!</p>
+        <button id="start-button">Start Game</button>
+    </div>
+    <div id="game-screen" class="hidden">
+        <div id="game-header">
+            <h1>Block Game</h1>
+            <p id="score">Score: 0</p>
+            <button id="reset-button">Reset Game</button>
+        </div>
+        <div id="game-container"></div>
+    </div>
+    <audio id="click-sound" src="click-sound.mp3"></audio>
+    <script src="scripts.js"></script>
 </body>
 </html>
